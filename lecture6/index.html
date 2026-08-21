@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    
+        <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+}
+</style>
+        
+    
+</head>
+
+<body>
+    <div>
+        <h1>table </h1>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+
+
+            </tr>
+        </table>
+        <h2>students score</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>student/subjuct</th>
+                    <th>maths</th>
+                    <th>hindi</th>
+                    <th>science</th>
+                    <th>english</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>anu</td>
+                    <td>90</td>
+                    <td>50</td>
+                    <td>70</td>
+                    <td>30</td>
+
+                </tr>
+                <tr>
+                    <td>bhavya</td>
+                    <td>60</td>
+                    <td>55</td>
+                    <td>79</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>sumit</td>
+                    <td>60</td>
+                    <td>35</td>
+                    <td>97</td>
+                    <td>85</td>
+                </tr>
+                <td>ayan</td>
+                <td>60</td>
+                <td>35</td>
+                <td>95</td>
+                <td>50</td>
+                <tr>
+            </tbody>
+            <tfoot>
+                <th>total</th>
+                <th>270</th>
+                <th>175</th>
+                <th></th>
+                <th></th>
+            </tfoot>
+
+            <caption>students score</caption>
+        </table>
+        <h2>rowspan and colspan</h2>
+        <table>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2" style="text-align: center;">average</th>
+                <th rowspan="2">redEyes</th>
+            </tr>
+            <tr>
+                <th>height</th>
+                <th>weight</th>
+            </tr>
+            <tr>
+                <td>male</td>
+                <td>1.9</td>
+                <td>0.002</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>females</td>
+                <td>1.9</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+            <caption>a test with merge cell</caption>
+        </table>
+
+
+        <table>
+            <tr>
+                <th colspan="6">time table</th>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td>mon</td>
+                <td>tue</td>
+                <td>wed</td>
+                <td>thru</td>
+                <td>fri</td>
+            </tr>
+            <tr>
+                <td>science</td>
+                <td>maths</td>
+                <td>hindi</td>
+                <td>english</td>
+                <td>sanskrit</td>
+            </tr>
+                <th rowspan="6">hours</th>
+                <td>science</td>
+                <td>maths</td>
+                <td>hindi</td>
+                <td>english</td>
+                <td>maths</td>
+            <tr>
+                <th colspan="5">lunch</th>
+            </tr>
+            <tr>
+                <td>science</td>
+                <td>maths</td>
+                <td>hindi</td>
+                <td>english</td>
+                <th rowspan="2">project</th>
+            </tr>
+            <tr>
+                <td>science</td>
+                <td>maths</td>
+                <td>hindi</td>
+                <td>english</td>
+            </tr>
+        </table>
+                
+
+    </div>
+
+</body>
+
+</html>

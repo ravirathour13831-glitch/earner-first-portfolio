@@ -1,0 +1,75 @@
+import { useState } from "react";
+
+function App() {
+const [video, setVideo] = useState(null);
+
+const handleUpload = (e) => {
+setVideo(e.target.files[0]);
+};
+
+const publishVideo = () => {
+if (!video) {
+alert("Please select a video");
+return;
+}
+
+alert("Video ready for publishing 🚀");
+};
+
+return (
+<div className="app">
+<h1>PostFlow 🚀</h1>
+
+<p>Upload once. Publish everywhere.</p>
+
+<div className="upload-box">
+<input
+type="file"
+accept="video/*"
+onChange={handleUpload}
+/>
+
+{video && (
+<p>
+Selected: <strong>{video.name}</strong>
+</p>
+)}
+
+<input
+type="text"
+placeholder="Enter video title"
+/>
+
+<textarea
+placeholder="Write your caption..."
+/>
+
+<input
+type="text"
+placeholder="#hashtags"
+/>
+
+<div className="platforms">
+<label>
+<input type="checkbox" />
+YouTube
+</label>
+
+<label>
+<input type="checkbox" />
+Instagram
+</label>
+
+<label>
+<input type="checkbox" />
+Facebook
+</label>
+</div>
+
+<button onClick={publishVideo}>
+Publish Video 🚀
+</button>
+</div>
+</div>
+);
+}
